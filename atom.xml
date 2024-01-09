@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://nekou2333.github.io</id>
+    <title>Gridea</title>
+    <updated>2024-01-09T14:43:52.216Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://nekou2333.github.io"/>
+    <link rel="self" href="https://nekou2333.github.io/atom.xml"/>
+    <subtitle>人心各有所感，是没有道理可讲的。</subtitle>
+    <logo>https://nekou2333.github.io/images/avatar.png</logo>
+    <icon>https://nekou2333.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[2023 · 辗转]]></title>
+        <id>https://nekou2333.github.io/post/2023-zhan-zhuan/</id>
+        <link href="https://nekou2333.github.io/post/2023-zhan-zhuan/">
+        </link>
+        <updated>2023-12-27T13:39:27.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="这一年">这一年</h1>
+<p>23年的开年第一件大事就是解除疫情防控政策，对我来说算是件好事，不用担心啥时候再被封3个月，也不用隔三差五去做个核酸了，家里老人阳了也没啥症状。</p>
+<p>随后是平淡的工作生活，GPT4的出现给老板们打了针鸡血，纷纷开始卷起了LLM相关的一切。得益于此，我也冲了一波绩效，3到8月是各种探索，终归是把晋升的绩效攒够了。好坏事总是一起的，上海团队解散了，组员要么rebase到北京，要么换到新的组去。考虑到晋升，我选择了去北京，也就是题目中的「辗转」。答复是7月给的，10月再搬到北京。原先的计划还得继续，该拍的车牌还得拍，7月底终于拍到上海的车牌，买车却遥遥无期了，更遥遥无期的是本计划好的养老生活。</p>
+<p>ಥ_ಥ</p>
+<p>来到北京之后，租房给第一个教训，原先还不理解为啥北京同事那么多合租，原来是真贵啊。整体上北京的生活比上海更枯燥些，主要是小区附近没有餐馆，租的房子里也没有厨房，周末吃饭比在上海还要发愁，叠加上在北京没有同学，刚到北京就开始想着回去了。</p>
+<p>给这一年总结为辗转，有两层想法：</p>
+<ul>
+<li>一层是空间上，从上海搬到了北京；</li>
+<li>一层是心理上，在上海or北京间纠结，在卷和躺之间纠结。</li>
+</ul>
+<h1 id="里程碑">里程碑</h1>
+<ul>
+<li>10月晋升完，小赚一笔。</li>
+</ul>
+<h1 id="电子垃圾">电子垃圾</h1>
+<ul>
+<li>Mac Mini</li>
+<li>iPad mini</li>
+<li>Apple Watch Series 6</li>
+</ul>
+<h1 id="未来">未来</h1>
+<ul>
+<li>1～3月刷刷算法题，背背八股文，争取换个工作回南方，首选苏州微软，次选上海生服。</li>
+<li>回南方之后，买辆车，租个简单的一户室，认真过日子，现在的周末过的有些浑浑噩噩的。</li>
+<li>如果能找个相对清闲的工作，可以把古琴捡起来，平时练周末开车去师傅家学琴。</li>
+<li>在北京多找几个地方玩玩。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://nekou233-photo.oss-cn-shanghai.aliyuncs.com/img/IMG_0053.JPG" alt="雍和宫" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[租房复盘]]></title>
+        <id>https://nekou2333.github.io/post/zu-fang-fu-pan/</id>
+        <link href="https://nekou2333.github.io/post/zu-fang-fu-pan/">
+        </link>
+        <updated>2023-10-30T14:03:06.000Z</updated>
+        <summary type="html"><![CDATA[<p>base北京已经整整两周，虽然有一周跑去了深圳，但是现在房子的优缺点已经差不多清楚了。</p>
+<p>对比 <a href="https://stdrc.cc/post/2023/04/04/renting-house/">租房经验总结 - Project RC</a> 中列出来的几个方面，做下复盘。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>base北京已经整整两周，虽然有一周跑去了深圳，但是现在房子的优缺点已经差不多清楚了。</p>
+<p>对比 <a href="https://stdrc.cc/post/2023/04/04/renting-house/">租房经验总结 - Project RC</a> 中列出来的几个方面，做下复盘。</p>
+<!-- more -->
+<h1 id="优点">优点</h1>
+<ul>
+<li>面积相对大，有阳台，有独卫，相对封闭；</li>
+<li>装修比较新；</li>
+</ul>
+<h1 id="缺点">缺点</h1>
+<ul>
+<li>房子在6楼，无电梯，相对来说上下楼拎重东西比较麻烦，水压小；</li>
+<li>小区安全过头了，外卖员无法直接送到门口，导致舍友点外卖会有点吵；</li>
+<li>附近没啥餐饮店，不点外卖的话吃饭麻烦；</li>
+<li>合租人多；</li>
+<li>插座少，有效插座就两个；</li>
+<li>没干湿分离；</li>
+<li>无厨房</li>
+<li>冰箱和床之间无隔音设施，小吵</li>
+<li>桌子小，缺少</li>
+</ul>
+<h1 id="复盘">复盘</h1>
+<ol>
+<li>合租的即使空间相对独立，心理层面上还是不能满足我对独立空间的需求，下次租房加价租一居室；</li>
+<li>接受小区相对不安全些，外卖能送到门口；</li>
+<li>外卖方便 or 离餐厅近，二选一；</li>
+<li>看房是记得看一下水压，卫生间是否有异味，水龙头水是否有锈味；</li>
+</ol>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[debian/ubuntu 上编译 python 3.6]]></title>
+        <id>https://nekou2333.github.io/post/1UhqDTiRE/</id>
+        <link href="https://nekou2333.github.io/post/1UhqDTiRE/">
+        </link>
+        <updated>2022-09-22T14:54:34.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>为啥要自己编译呢？<br>
+debian 9 上 <code>apt</code> 只能装到 <code> python3.5</code>。</p>
+<p>为啥用 debian 9 呢？<br>
+公司电脑，给啥用啥呗 😔</p>
+</blockquote>
+<ol>
+<li>在安装Python前需要先安装ssl开发相关的include和lib，否则Python3会找不到openssl，进而导致pip无法使用</li>
+</ol>
+<pre><code class="language-shell">sudo apt-get install libssl-dev zlib1g-dev libffi-dev libbz2-dev
+</code></pre>
+<p>如果没有先装上，后续补装了得重新走一遍编译流程。</p>
+<ol start="2">
+<li>找个空旷的目录</li>
+<li>下载Python3.6源码并解压</li>
+</ol>
+<pre><code class="language-shell">wget https://www.python.org/ftp/python/3.6.5/Python-3.6.5.tgz
+tar -zxvf Python-3.6.5.tgz
+</code></pre>
+<ol start="4">
+<li>进入Python源码目录，配置、编译、安装</li>
+</ol>
+<pre><code class="language-shell">cd Python-3.6.5
+ sudo ./configure
+ sudo make
+ sudo make install
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GO的nil]]></title>
+        <id>https://nekou2333.github.io/post/go-nil/</id>
+        <link href="https://nekou2333.github.io/post/go-nil/">
+        </link>
+        <updated>2022-04-26T13:47:27.000Z</updated>
+        <content type="html"><![CDATA[<p>在 Golang 中，即使结构体为 <code>nil</code>，也可以调用方法（引起 <code>panic</code> 的是调用结构体中的变量，而非调用方法本身）</p>
+<pre><code class="language-Go">type Person struct {
+	name *string
+	age  *int64
+}
+ 
+func (p *Person) Name() string {
+	if p == nil {
+		return &quot;no name&quot;
+	}
+	return *p.name
+}
+ 
+func main() {
+	var temp *Person
+	fmt.Println(temp.Name())
+}
+</code></pre>
+<p>这一点能够实现的原因就是 <code>nil</code> 本身也存在类型。</p>
+<h1 id="go-的-nil">Go 的 nil</h1>
+<pre><code class="language-Go">// nil is a predeclared identifier representing the zero value for a
+// pointer, channel, func, interface, map, or slice type.
+var nil Type // Type must be a pointer, channel, func, interface, map, or slice type
+
+// Type is here for the purposes of documentation only. It is a stand-in
+// for any Go type, but represents the same type for any given function
+// invocation.
+type Type int
+</code></pre>
+<hr>
+]]></content>
+    </entry>
+</feed>
