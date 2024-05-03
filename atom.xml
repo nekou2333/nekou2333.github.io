@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://nekou2333.github.io</id>
+    <title>Meowstic小屋</title>
+    <updated>2024-05-03T12:22:11.735Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://nekou2333.github.io"/>
+    <link rel="self" href="https://nekou2333.github.io/atom.xml"/>
+    <subtitle>人心各有所感，最是没道理可讲。</subtitle>
+    <logo>https://nekou2333.github.io/images/avatar.png</logo>
+    <icon>https://nekou2333.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2024, Meowstic小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[2023 · 辗转]]></title>
+        <id>https://nekou2333.github.io/post/2023-zhan-zhuan/</id>
+        <link href="https://nekou2333.github.io/post/2023-zhan-zhuan/">
+        </link>
+        <updated>2023-12-27T12:11:44.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="这一年">这一年</h2>
+<p>23年的开年第一件大事就是解除疫情防控政策，对我来说算是件好事，不用担心啥时候再被封3个月，也不用隔三差五去做个核酸了，家里老人阳了也没啥症状。</p>
+<p>随后是平淡的工作生活，GPT4的出现给老板们打了针鸡血，纷纷开始卷起了LLM相关的一切。得益于此，我也冲了一波绩效，3到8月是各种探索，终归是把晋升的绩效攒够了。好坏事总是一起的，上海团队解散了，组员要么rebase到北京，要么换到新的组去。考虑到晋升，我选择了去北京，也就是题目中的「辗转」。答复是7月给的，10月再搬到北京。原先的计划还得继续，该拍的车牌还得拍，7月底终于拍到上海的车牌，买车却遥遥无期了，更遥遥无期的是本计划好的养老生活。</p>
+<p>ಥ_ಥ</p>
+<p>来到北京之后，租房给第一个教训，原先还不理解为啥北京同事那么多合租，原来是真贵啊。整体上北京的生活比上海更枯燥些，主要是小区附近没有餐馆，租的房子里也没有厨房，周末吃饭比在上海还要发愁，叠加上在北京没有同学，刚到北京就开始想着回去了。</p>
+<p>给这一年总结为辗转，有两层想法：</p>
+<p>一层是空间上，从上海搬到了北京；</p>
+<p>一层是心理上，在上海or北京间纠结，在卷和躺之间纠结。</p>
+<h2 id="里程碑">里程碑</h2>
+<p>10月晋升完，小赚一笔。</p>
+<h2 id="电子垃圾">电子垃圾</h2>
+<p>Mac Mini</p>
+<p>iPad mini</p>
+<p>Apple Watch Series 6</p>
+<h2 id="未来">未来</h2>
+<p>1～3月刷刷算法题，背背八股文，争取换个工作回南方，首选苏州微软，次选上海生服。</p>
+<p>回南方之后，买辆车，租个简单的一户室，认真过日子，现在的周末过的有些浑浑噩噩的。</p>
+<p>如果能找个相对清闲的工作，可以把古琴捡起来，平时练周末开车去师傅家学琴。</p>
+<p>在北京多找几个地方玩玩。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[租房复盘]]></title>
+        <id>https://nekou2333.github.io/post/zu-fang-fu-pan/</id>
+        <link href="https://nekou2333.github.io/post/zu-fang-fu-pan/">
+        </link>
+        <updated>2023-10-30T12:18:45.000Z</updated>
+        <content type="html"><![CDATA[<p>base北京已经整整两周，虽然有一周跑去了深圳，但是现在房子的优缺点已经差不多清楚了。</p>
+<p>对比 <a href="https://stdrc.cc/post/2023/04/04/renting-house/">租房经验总结 - Project RC</a> 中列出来的几个方面，做下复盘。</p>
+<h2 id="优点">优点</h2>
+<ul>
+<li>面积相对大，有阳台，有独卫，相对封闭；</li>
+<li>装修比较新；</li>
+</ul>
+<h2 id="缺点">缺点</h2>
+<ul>
+<li>房子在6楼，无电梯，相对来说上下楼拎重东西比较麻烦，水压小；</li>
+<li>小区安全过头了，外卖员无法直接送到门口，导致舍友点外卖会有点吵；</li>
+<li>附近没啥餐饮店，不点外卖的话吃饭麻烦；</li>
+<li>合租人多；</li>
+<li>插座少，有效插座就两个；</li>
+<li>没干湿分离；</li>
+<li>无厨房</li>
+<li>冰箱和床之间无隔音设施，小吵</li>
+<li>桌子小，缺少</li>
+</ul>
+<h2 id="复盘">复盘</h2>
+<ol>
+<li>合租的即使空间相对独立，心理层面上还是不能满足我对独立空间的需求，下次租房加价租一居室；</li>
+<li>接受小区相对不安全些，外卖能送到门口；</li>
+<li>外卖方便 or 离餐厅近，二选一；</li>
+<li>看房是记得看一下水压，卫生间是否有异味，水龙头水是否有锈味；</li>
+</ol>
+]]></content>
+    </entry>
+</feed>
