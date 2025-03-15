@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://nekou2333.github.io</id>
+    <title>Meowstic小屋</title>
+    <updated>2025-03-15T10:25:57.991Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://nekou2333.github.io"/>
+    <link rel="self" href="https://nekou2333.github.io/atom.xml"/>
+    <subtitle>人心各有所感，最是没道理可讲。</subtitle>
+    <logo>https://nekou2333.github.io/images/avatar.png</logo>
+    <icon>https://nekou2333.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Meowstic小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[「茶与茶器」紫砂壶以砂为上]]></title>
+        <id>https://nekou2333.github.io/post/5Pkqm_Ws90/</id>
+        <link href="https://nekou2333.github.io/post/5Pkqm_Ws90/">
+        </link>
+        <updated>2025-03-15T05:24:02.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>盖是粗砂，正取砂无土气耳。 --明代 屠本畯《茗笈》</p>
+<p>茶壶以砂为上，盖既不夺香，又无熟汤气。 --文震亨</p>
+<p>宜倾竭即涤，去厥渟滓，乃俗夫强作解事，谓时壶质地紧洁，注茶越宿暑月不馊，不知越数刻而茶败矣，安俟越宿哉。 -- 明代 周高起《阳羡茗壶系》</p>
+</blockquote>
+<p>致密度高的紫砂壶，吸水率低，吸附性弱，所以紫砂壶不夺茶的香气。壶的透气性好，说明了紫砂壶的含砂量低、烧结温度低以及壶体的致密度低。壶体的结构疏松了，才会透气性好。若透气性好了，自然就会吸附、影响茶的香气，而<mark>不适合</mark>作为良好的泡茶器使用。</p>
+<p>假设一把壶只能泡一种茶，那只能证明这把紫砂壶的结构疏松，吸附了茶的香气，此种味道，会对连续瀹泡的第二种茶类产生干扰。低温烧结的壶，成品率高，但其质地疏松，可能会有害健康。另外，紫砂壶因含砂量低或未能烧透，茶渍又极易被吸附到壶体表面，使得此类壶会越养越黑，污渍斑斑，<s>最为贱相</s>。</p>
+<h2 id="选壶">选壶</h2>
+<h3 id="砂料纯正高温无害">砂料纯正，高温无害</h3>
+<p>壶的内外表面，通过适度烧结，不仅能够形成珠粒隐隐的自然丰富的肌理美感，而且一定要能看到云母的银晶闪烁，以及类似杂色斑点的黑色铁熔点。其色调沉稳、不花哨、不艳丽，壶面砂粒要莹润养眼，也就是我们常讲的紫砂壶的如玉水色。周高起推崇的“更自夺目”，指的就是砂粒烧结到位的晶莹感，这正是最容易忽略掉的鉴赏紫砂的要点。</p>
+<h3 id="出水顺畅">出水顺畅</h3>
+<h3 id="壶的大小要拿捏合手-同样容量的壶要选重量稍轻的">壶的大小，要拿捏合手。同样容量的壶，要选重量稍轻的</h3>
+<blockquote>
+<p>壶宜小不宜大，壶盖宜盎不宜砥，汤力茗香，俾得团结氤氲。 -- 吴骞 《阳羡名陶录》</p>
+<p>茶壶，窑器为上，又以小为贵。每一客一把，任其自斟自酌，方得其趣。 -- 冯可宾《岕茶笺》</p>
+</blockquote>
+<p>一人独品，选用容量100毫升左右的壶即可；二人对饮，选择容量150毫升左右的壶比较适当；若是三四人喝茶，壶的容量也不宜超过200毫升；茶三酒四，如果人数再多，就要分席而饮，方为恰当。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MoneyWiz 自动更新国内基金价格]]></title>
+        <id>https://nekou2333.github.io/post/9AUdqljtJh/</id>
+        <link href="https://nekou2333.github.io/post/9AUdqljtJh/">
+        </link>
+        <updated>2024-11-02T12:04:35.000Z</updated>
+        <content type="html"><![CDATA[<p>如题，MoneyWiz 虽然能够根据基金代码自动更新基金价格，但是使用的是 yahoo 的 api，不仅链接不稳定，对中国基金的支持也不够好。更糟糕的是，国内基金的代码可能和国外股票代码撞上，导致更新错误价格。</p>
+<h2 id="更新价格接口">更新价格接口</h2>
+<p>万幸，官方文档<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>中给出了更新价格的 scheme 规范，理论上只要在 safari 浏览器中输入类似于 <code>moneywiz://updateholding?symbol={FCODE}.CN&amp;price={dwjz}&amp;date={date}</code> 的链接即可更新价格。</p>
+<h2 id="获取价格自动化脚本">获取价格&amp;自动化脚本</h2>
+<p>网上基本都是在爬天天基金的数据，本项目自然不会例外，<a href="https://kouchao.github.io/TiantianFundApi/apis/#%E8%8E%B7%E5%8F%96%E5%9F%BA%E9%87%91%E5%8E%86%E5%8F%B2%E5%87%80%E5%80%BC">天天基金 Api</a> 给出了简便的接口，在本地部署这个项目即可，安装教程见<a href="https://kouchao.github.io/TiantianFundApi/guide/">快速开始</a>。</p>
+<p>为了方便起见，我是在mac上跑的脚本~~，如果没有mac，可以尝试下脚本+捷径的方案？我没试过~~</p>
+<p>为了防止和国外股票撞上，给基金代码后面加了 <code>.CN</code> 尾缀，这一点需要在 MoneyWiz 记录时注意补上，脚本比较简单，就直接给出来了。</p>
+<pre><code class="language-python">import webbrowser  
+import requests  
+import json
+import time
+
+pageIndex = 1  
+pagesize = 100  
+  
+tickers = [&quot;002963&quot;]  # 基金代码  
+for ticker in tickers:  
+    FCODE = ticker  
+    resp = requests.get(&quot;http://localhost:3000/fundMNHisNetList&quot;, params={  
+        &quot;FCODE&quot;: FCODE,  
+        &quot;pageIndex&quot;: pageIndex,  
+        &quot;pagesize&quot;: pagesize  
+    })  
+  
+    if resp.status_code &gt;= 400:  
+        continue  
+  
+    datas = json.loads(resp.content).get(&quot;Datas&quot;, [])  
+    for data in datas:  
+        dwjz = data.get(&quot;DWJZ&quot;, &quot;&quot;)  
+        if dwjz == &quot;&quot;:  
+            continue  
+        date = data.get(&quot;FSRQ&quot;, &quot;&quot;)  
+        if date == &quot;&quot;:  
+            continue  
+        date = date.replace(&quot;-&quot;, &quot;&quot;)  
+  
+        moneywiz = f&quot;moneywiz://updateholding?symbol={FCODE}.CN&amp;price={dwjz}&amp;date={date}&quot;  
+        webbrowser.open(moneywiz)  # 运行  
+        time.sleep(1)
+</code></pre>
+<p>在结尾，感谢 <strong><a href="https://github.com/log924/moneywiz-china-funds">moneywiz-china-funds</a></strong> 给到的思路。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>https://help.wiz.money/en/articles/4525440-automate-transaction-management-with-url-schemas <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《kafka 权威指南》笔记]]></title>
+        <id>https://nekou2333.github.io/post/lesslesskafka-quan-wei-zhi-nan-greatergreater-bi-ji/</id>
+        <link href="https://nekou2333.github.io/post/lesslesskafka-quan-wei-zhi-nan-greatergreater-bi-ji/">
+        </link>
+        <updated>2024-08-11T14:35:59.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="1-初识kafka">1 初识Kafka</h2>
+<h3 id="12-kafka登场">1.2 Kafka登场</h3>
+<p>Kafka 的数据单元被称为消息。</p>
+<p>为了提高效率,消息被分批次写入 Kafka。批次就是一组消息,这些消息属于同一个主题和分区。</p>
+<p>消息以追加的方式写入分区,然后以先入先出的顺序读取。</p>
+<p>通常会使用流这个词来描述 Kafka 这类系统的数据。</p>
+<p>生产者创建消息。在其他发布与订阅系统中,生产者可能被称为发布者或写入者。</p>
+<p>消费者读取消息。在其他发布与订阅系统中,消费者可能被称为订阅者或读者。</p>
+<p>一个独立的 Kafka 服务器被称为 broker。broker 接收来自生产者的消息,为消息设置偏移量,并提交消息到磁盘保存。broker 为消费者提供服务,对读取分区的请求作出响应,返回已经提交到磁盘上的消息。</p>
+<p>broker 是集群的组成部分。每个集群都有一个 broker 同时充当了集群控制器的角色(自动  从集群的活跃成员中选举出来)。在集群中,一个分区从属于一个 broker,该 broker 被称为分区的首领。一个分区可以分配给多个 broker,这个时候会发生分区复制(见图 1-7)。这种复制机制为分区提供了消息冗余,如果有一个 broker 失效,其他 broker 可以接管领导权</p>
+<h2 id="5-深入-kafka">5 深入 Kafka</h2>
+<h3 id="52-控制器">5.2 控制器</h3>
+<p><mark>控制器其实就是一个 broker,只不过它除了具有一般 broker 的功能之外,还负责分区 首领的选举。</mark></p>
+<p>集群里第一个启动的 broker 通过在 Zookeeper 里创建一个临时节点 <code>/controller</code> 让自己成为控制器。其他 broker 在启动时也 会尝试创建这个节点,不过它们会收到一个“节点已存在”的异常,然后“意识”到控制 器节点已存在,也就是说集群里已经有一个控制器了。其他 broker 在控制器节点上创建 Zookeeper watch 对象,这样它们就可以收到这个节点的变更通知。</p>
+<h3 id="53-复制">5.3 复制</h3>
+<ul>
+<li>首领副本: 每个分区都有一个首领副本，为了保持一致性，所有生产者请求和消费者请求都会经过这个副本。</li>
+<li>跟随者副本: 唯一的任务就是从首领复制消息，保持和首领一致的状态。如果首领崩溃，其中一个被提升为新首领。</li>
+</ul>
+<h3 id="54-处理请求">5.4 处理请求</h3>
+<p>broker 会在它所监听的每一个端口上运行一个 Acceptor 线程,这个线程会创建一个连接,  并把它交给 Processor 线程去处理。Processor 线程(也被叫作“网络线程”)的数量是可  配置的。网络线程负责从客户端获取请求消息,把它们放进请求队列,然后从响应队列获  取响应消息,把它们发送给客户端。</p>
+<p>请求类型:</p>
+<ul>
+<li>生产请求：生产者发送的请求,它包含客户端要写入 broker 的消息。</li>
+<li>获取请求：在消费者和跟随者副本需要从 broker 读取消息时发送的请求。</li>
+<li>元数据请求：请求包含了客户端感兴趣的主题列表。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://nekou2333.github.io/post-images/1723387003128.png" alt="" loading="lazy"></figure>
+<h3 id="55-物理存储">5.5 物理存储</h3>
+<p>Kafka 的基本存储单元是分区。</p>
+<p>文件管理：Kafka 管理员为每个主题配置了数据保留期限,规定  数据被删除之前可以保留多长时间,或者清理数据之前可以保留的数据量大小。</p>
+<p>文件格式：Kafka 的消息和偏移量保存在文件里。保存在磁盘上的数据格式与从生产者发送过来或者发送给消费者的消息格式是一样的，Kafka 可以使用零复制技术给消费者发送消息,同时避免了对生产者已经压缩过的消息进行解压和再压缩。Kafka 附带了一个叫 DumpLogSegment 的工具,可以用它查看片段的内容。</p>
+<p>索引：Kafka 的任意可用偏移量位置开始读取消息。为了帮助 broker 更快地定位到指定的偏移量,Kafka  为每个分区维护了一个索引。</p>
+<p>清理：早于保留时间的旧事件会被删除,  为每个键保留最新的值,从而达到清理的效果。彻底清除需要发送一个值为null的消息。</p>
+<h2 id="可靠的数据传递">可靠的数据传递</h2>
+<h3 id="61-可靠性保证">6.1 可靠性保证</h3>
+<p>指确保系统在各种不同的环境下能够  发生一致的行为。</p>
+<ul>
+<li>Kafka 可以保证分区消息的顺序。</li>
+<li>只有当消息被写入分区的所有同步副本时(但不一定要写入磁盘),它才被认为是“已  提交”的。</li>
+<li>只要还有一个副本是活跃的,那么已经提交的消息就不会丢失。</li>
+<li>消费者只能读取已经提交的消息。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023 · 辗转]]></title>
+        <id>https://nekou2333.github.io/post/2023-zhan-zhuan/</id>
+        <link href="https://nekou2333.github.io/post/2023-zhan-zhuan/">
+        </link>
+        <updated>2023-12-27T12:11:44.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="这一年">这一年</h2>
+<p>23年的开年第一件大事就是解除疫情防控政策，对我来说算是件好事，不用担心啥时候再被封3个月，也不用隔三差五去做个核酸了，家里老人阳了也没啥症状。</p>
+<p>随后是平淡的工作生活，GPT4的出现给老板们打了针鸡血，纷纷开始卷起了LLM相关的一切。得益于此，我也冲了一波绩效，3到8月是各种探索，终归是把晋升的绩效攒够了。好坏事总是一起的，上海团队解散了，组员要么rebase到北京，要么换到新的组去。考虑到晋升，我选择了去北京，也就是题目中的「辗转」。答复是7月给的，10月再搬到北京。原先的计划还得继续，该拍的车牌还得拍，7月底终于拍到上海的车牌，买车却遥遥无期了，更遥遥无期的是本计划好的养老生活。</p>
+<p>ಥ_ಥ</p>
+<p>来到北京之后，租房给第一个教训，原先还不理解为啥北京同事那么多合租，原来是真贵啊。整体上北京的生活比上海更枯燥些，主要是小区附近没有餐馆，租的房子里也没有厨房，周末吃饭比在上海还要发愁，叠加上在北京没有同学，刚到北京就开始想着回去了。</p>
+<p>给这一年总结为辗转，有两层想法：</p>
+<p>一层是空间上，从上海搬到了北京；</p>
+<p>一层是心理上，在上海or北京间纠结，在卷和躺之间纠结。</p>
+<h2 id="里程碑">里程碑</h2>
+<p>10月晋升完，小赚一笔。</p>
+<h2 id="电子垃圾">电子垃圾</h2>
+<p>Mac Mini</p>
+<p>iPad mini</p>
+<p>Apple Watch Series 6</p>
+<h2 id="未来">未来</h2>
+<p>1～3月刷刷算法题，背背八股文，争取换个工作回南方，首选苏州微软，次选上海生服。</p>
+<p>回南方之后，买辆车，租个简单的一户室，认真过日子，现在的周末过的有些浑浑噩噩的。</p>
+<p>如果能找个相对清闲的工作，可以把古琴捡起来，平时练周末开车去师傅家学琴。</p>
+<p>在北京多找几个地方玩玩。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[租房复盘]]></title>
+        <id>https://nekou2333.github.io/post/zu-fang-fu-pan/</id>
+        <link href="https://nekou2333.github.io/post/zu-fang-fu-pan/">
+        </link>
+        <updated>2023-10-30T12:18:45.000Z</updated>
+        <content type="html"><![CDATA[<p>base北京已经整整两周，虽然有一周跑去了深圳，但是现在房子的优缺点已经差不多清楚了。</p>
+<p>对比 <a href="https://stdrc.cc/post/2023/04/04/renting-house/">租房经验总结 - Project RC</a> 中列出来的几个方面，做下复盘。</p>
+<h2 id="优点">优点</h2>
+<ul>
+<li>面积相对大，有阳台，有独卫，相对封闭；</li>
+<li>装修比较新；</li>
+</ul>
+<h2 id="缺点">缺点</h2>
+<ul>
+<li>房子在6楼，无电梯，相对来说上下楼拎重东西比较麻烦，水压小；</li>
+<li>小区安全过头了，外卖员无法直接送到门口，导致舍友点外卖会有点吵；</li>
+<li>附近没啥餐饮店，不点外卖的话吃饭麻烦；</li>
+<li>合租人多；</li>
+<li>插座少，有效插座就两个；</li>
+<li>没干湿分离；</li>
+<li>无厨房</li>
+<li>冰箱和床之间无隔音设施，小吵</li>
+<li>桌子小，缺少</li>
+</ul>
+<h2 id="复盘">复盘</h2>
+<ol>
+<li>合租的即使空间相对独立，心理层面上还是不能满足我对独立空间的需求，下次租房加价租一居室；</li>
+<li>接受小区相对不安全些，外卖能送到门口；</li>
+<li>外卖方便 or 离餐厅近，二选一；</li>
+<li>看房是记得看一下水压，卫生间是否有异味，水龙头水是否有锈味；</li>
+</ol>
+]]></content>
+    </entry>
+</feed>
