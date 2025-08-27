@@ -1,0 +1,324 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Meowstic小屋</title>
+<meta name="description" content="人心各有所感，最是没道理可讲。" />
+<link rel="shortcut icon" href="https://nekou2333.github.io/favicon.ico?v=1756312012811">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+<link rel="stylesheet" href="https://nekou2333.github.io/styles/main.css">
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main px-4 flex flex-col lg:flex-row">
+      <div id="sidebar" class="sidebar-wrapper lg:static lg:w-1/4">
+  <div class="lg:sticky top-0">
+    <div class="sidebar-content">
+      <div class="flex lg:block p-4 lg:px-0 items-center fixed lg:static lg:block top-0 right-0 left-0 bg-white z-50">
+        <i class="ri-menu-2-line lg:mt-4 text-2xl cursor-pointer animated fadeIn" onclick="openMenu()"></i>
+        <a href="https://nekou2333.github.io">
+          <img class="animated fadeInLeft avatar rounded-lg mx-4 lg:mt-32 lg:mx-0 mt-0 lg:w-24 lg:h-24 w-12 w-12" src="https://nekou2333.github.io/images/avatar.png?v=1756312012811" alt="">
+        </a>
+        <h1 class="animated fadeInLeft lg:text-4xl font-extrabold lg:mt-8 mt-0 text-xl" style="animation-delay: 0.2s">Meowstic小屋</h1>
+      </div>
+      
+        <div class="animated fadeInLeft" style="animation-delay: 0.4s">
+          <p class="my-4 text-gray-600 font-light hidden lg:block">
+            文章目录
+          </p>
+          <div class="toc-container hidden lg:block">
+            <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#%E6%9B%B4%E6%96%B0%E4%BB%B7%E6%A0%BC%E6%8E%A5%E5%8F%A3">更新价格接口</a></li>
+<li><a href="#%E8%8E%B7%E5%8F%96%E4%BB%B7%E6%A0%BC%E8%87%AA%E5%8A%A8%E5%8C%96%E8%84%9A%E6%9C%AC">获取价格&amp;自动化脚本</a></li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="menu-container">
+  <i class="ri-arrow-left-line text-2xl cursor-pointer animated fadeIn close-menu-btn" onclick="closeMenu()"></i>
+  <div>
+    
+      
+        <a href="/" class="menu" style="animation-delay: 0s">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu" style="animation-delay: 0.2s">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu" style="animation-delay: 0.4s">
+          标签
+        </a>
+      
+    
+      
+        <a href="/post/about" class="menu" style="animation-delay: 0.6000000000000001s">
+          关于
+        </a>
+      
+    
+      
+        <a href="/blogs" class="menu" style="animation-delay: 0.8s">
+          新博客
+        </a>
+      
+    
+  </div>
+  <div class="site-footer">
+    <div class="py-4 text-gray-700">Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a></div>
+    <a class="rss" href="https://nekou2333.github.io/atom.xml" target="_blank">RSS</a>
+  </div>
+</div>
+<div class="mask" onclick="closeMenu()">
+</div>
+      <div class="content-wrapper py-32 lg:p-8 lg:w-3/4 post-detail animated fadeIn">
+        <h1 class="text-3xl font-bold lg:mt-16">MoneyWiz 自动更新国内基金价格</h1>
+        <div class="text-sm text-gray-700 lg:my-8">
+          2024-11-02 / 2 min read
+        </div>
+        
+          <img class="post-feature-image rounded-lg mx-auto my-4" src="https://nekou2333.github.io/post-images/9AUdqljtJh.jpg" alt="">
+        
+        <div class="post-content yue">
+          <p>如题，MoneyWiz 虽然能够根据基金代码自动更新基金价格，但是使用的是 yahoo 的 api，不仅链接不稳定，对中国基金的支持也不够好。更糟糕的是，国内基金的代码可能和国外股票代码撞上，导致更新错误价格。</p>
+<h2 id="更新价格接口">更新价格接口</h2>
+<p>万幸，官方文档<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>中给出了更新价格的 scheme 规范，理论上只要在 safari 浏览器中输入类似于 <code>moneywiz://updateholding?symbol={FCODE}.CN&amp;price={dwjz}&amp;date={date}</code> 的链接即可更新价格。</p>
+<h2 id="获取价格自动化脚本">获取价格&amp;自动化脚本</h2>
+<p>网上基本都是在爬天天基金的数据，本项目自然不会例外，<a href="https://kouchao.github.io/TiantianFundApi/apis/#%E8%8E%B7%E5%8F%96%E5%9F%BA%E9%87%91%E5%8E%86%E5%8F%B2%E5%87%80%E5%80%BC">天天基金 Api</a> 给出了简便的接口，在本地部署这个项目即可，安装教程见<a href="https://kouchao.github.io/TiantianFundApi/guide/">快速开始</a>。</p>
+<p>为了方便起见，我是在mac上跑的脚本~~，如果没有mac，可以尝试下脚本+捷径的方案？我没试过~~</p>
+<p>为了防止和国外股票撞上，给基金代码后面加了 <code>.CN</code> 尾缀，这一点需要在 MoneyWiz 记录时注意补上，脚本比较简单，就直接给出来了。</p>
+<pre><code class="language-python">import webbrowser  
+import requests  
+import json
+import time
+
+pageIndex = 1  
+pagesize = 100  
+  
+tickers = [&quot;002963&quot;]  # 基金代码  
+for ticker in tickers:  
+    FCODE = ticker  
+    resp = requests.get(&quot;http://localhost:3000/fundMNHisNetList&quot;, params={  
+        &quot;FCODE&quot;: FCODE,  
+        &quot;pageIndex&quot;: pageIndex,  
+        &quot;pagesize&quot;: pagesize  
+    })  
+  
+    if resp.status_code &gt;= 400:  
+        continue  
+  
+    datas = json.loads(resp.content).get(&quot;Datas&quot;, [])  
+    for data in datas:  
+        dwjz = data.get(&quot;DWJZ&quot;, &quot;&quot;)  
+        if dwjz == &quot;&quot;:  
+            continue  
+        date = data.get(&quot;FSRQ&quot;, &quot;&quot;)  
+        if date == &quot;&quot;:  
+            continue  
+        date = date.replace(&quot;-&quot;, &quot;&quot;)  
+  
+        moneywiz = f&quot;moneywiz://updateholding?symbol={FCODE}.CN&amp;price={dwjz}&amp;date={date}&quot;  
+        webbrowser.open(moneywiz)  # 运行  
+        time.sleep(1)
+</code></pre>
+<p>在结尾，感谢 <strong><a href="https://github.com/log924/moneywiz-china-funds">moneywiz-china-funds</a></strong> 给到的思路。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>https://help.wiz.money/en/articles/4525440-automate-transaction-management-with-url-schemas <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+        </div>
+
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://nekou2333.github.io/tag/azVludG_cB/">
+            <span class="flex-auto">MoneyWiz</span>
+          </a>
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://nekou2333.github.io/tag/9Qll6Uogilu/">
+            <span class="flex-auto">记账</span>
+          </a>
+        
+          <a class="animated fadeInUp p-2 items-center text-sm text-gray-700 border hover:bg-gray-300 leading-none rounded-full flex lg:inline-flex m-4 " href="https://nekou2333.github.io/tag/ofBE7hyiLva/">
+            <span class="flex-auto">Beancount</span>
+          </a>
+        
+
+
+        <div class="flex justify-between py-8">
+          
+            <div class="prev-post">
+              <a href="https://nekou2333.github.io/post/5Pkqm_Ws90/">
+                <h3 class="post-title">
+                  <i class="ri-arrow-left-line"></i>
+                  「茶与茶器」紫砂壶以砂为上
+                </h3>
+              </a>
+            </div>
+          
+
+          
+            <div class="next-post">
+              <a href="https://nekou2333.github.io/post/lesslesskafka-quan-wei-zhi-nan-greatergreater-bi-ji/">
+                <h3 class="post-title">
+                  《kafka 权威指南》笔记
+                  <i class="ri-arrow-right-line"></i>
+                </h3>
+              </a>
+            </div>
+          
+        </div>
+
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '70c8e2607aa83cbddbd7',
+    clientSecret: 'e1881f080e2c1300070a8e2817206d99dc9cfcd9',
+    repo: 'nekou2333/BlogComments',
+    owner: 'nekou2333',
+    admin: ['nekou2333'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
+        
+
+      </div>
+    </div>
+
+    <script src="https://nekou2333.github.io/media/prism.js"></script>  
+<script>
+
+Prism.highlightAll()
+let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+// This should probably be throttled.
+// Especially because it triggers during smooth scrolling.
+// https://lodash.com/docs/4.17.10#throttle
+// You could do like...
+// window.addEventListener("scroll", () => {
+//    _.throttle(doThatStuff, 100);
+// });
+// Only not doing it here to keep this Pen dependency-free.
+
+window.addEventListener("scroll", event => {
+  let fromTop = window.scrollY;
+
+  mainNavLinks.forEach((link, index) => {
+    let section = document.getElementById(decodeURI(link.hash).substring(1));
+    let nextSection = null
+    if (mainNavLinks[index + 1]) {
+      nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+    }
+    if (section.offsetTop <= fromTop) {
+      if (nextSection) {
+        if (nextSection.offsetTop > fromTop) {
+          link.classList.add("current");
+        } else {
+          link.classList.remove("current");    
+        }
+      } else {
+        link.classList.add("current");
+      }
+    } else {
+      link.classList.remove("current");
+    }
+  });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyImages = [].slice.call(document.querySelectorAll(".post-feature-image.lazy"));
+
+  if ("IntersectionObserver" in window) {
+    let lazyImageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          let lazyImage = entry.target
+          lazyImage.style.backgroundImage = `url(${lazyImage.dataset.bg})`
+          lazyImage.classList.remove("lazy")
+          lazyImageObserver.unobserve(lazyImage)
+        }
+      });
+    });
+
+    lazyImages.forEach(function(lazyImage) {
+      lazyImageObserver.observe(lazyImage)
+    })
+  } else {
+    // Possibly fall back to a more compatible method here
+  }
+});
+
+const menuContainer = document.querySelector('.menu-container')
+const menus = document.querySelectorAll('.menu-container .menu')
+const mask = document.querySelector('.mask')
+const contentWrapper = document.querySelector('.content-wrapper')
+const latestArticle = document.querySelector('.latest-article')
+const readMore = document.querySelector('.read-more')
+const indexPage = document.querySelector('.index-page')
+
+const isHome = location.pathname === '/'
+if (latestArticle) {
+  latestArticle.style.display = isHome ? 'block' : 'none'
+  readMore.style.display = isHome ? 'block' : 'none'
+  indexPage.style.display = isHome ? 'none' : 'block'
+}
+
+const openMenu = () => {
+  menuContainer.classList.add('open')
+  menus.forEach(menu => {
+    menu.classList.add('animated', 'fadeInLeft')
+  })
+  mask.classList.add('open')
+  contentWrapper.classList.add('is-second')
+}
+
+const closeMenu = () => {
+  menuContainer.classList.remove('open')
+  menus.forEach(menu => {
+    menu.classList.remove('animated', 'fadeInLeft')
+  })
+  mask.classList.remove('open')
+  contentWrapper.classList.remove('is-second')
+}
+</script>
+  
+  </body>
+</html>

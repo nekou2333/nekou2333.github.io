@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://nekou2333.github.io</id>
+    <title>Meowstic小屋</title>
+    <updated>2025-08-27T16:26:59.101Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://nekou2333.github.io"/>
+    <link rel="self" href="https://nekou2333.github.io/atom.xml"/>
+    <subtitle>人心各有所感，最是没道理可讲。</subtitle>
+    <logo>https://nekou2333.github.io/images/avatar.png</logo>
+    <icon>https://nekou2333.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, Meowstic小屋</rights>
+    <entry>
+        <title type="html"><![CDATA[「翻译」The Second Half]]></title>
+        <id>https://nekou2333.github.io/post/7LuDp5aDJ0/</id>
+        <link href="https://nekou2333.github.io/post/7LuDp5aDJ0/">
+        </link>
+        <updated>2025-08-19T11:55:43.000Z</updated>
+        <content type="html"><![CDATA[<p>原文：https://ysymyth.github.io/The-Second-Half/</p>
+<h2 id="the-second-half">The Second Half</h2>
+<blockquote>
+<p>This recipe is completely changing the game. To recap the game of the first half:</p>
+<ul>
+<li>We develop novel training methods or models that hillclimb benchmarks.</li>
+<li>We create harder benchmarks and continue the loop.</li>
+</ul>
+<p>This game is being ruined because:</p>
+<ul>
+<li>The recipe has essentially standardized and industried benchmark hillclimbing without requiring much more new ideas. As the recipe scales and generalizes well, your novel method for a particular task might improve it by 5%, while the next o-series model improve it by 30% without explicitly targeting it.</li>
+<li>Even if we create harder benchmarks, pretty soon (and increasingly soon) they get solved by the recipe. My colleague Jason Wei made a beautiful figure to visualize the trend well:</li>
+</ul>
+</blockquote>
+<p>这个方法正在彻底改变游戏规则。回顾一下上半场的游戏：</p>
+<ul>
+<li>我们开发新颖的训练方法或模型来逐步提升基准测试的性能。</li>
+<li>我们创建更难的基准测试，然后继续这个循环。</li>
+</ul>
+<p>这个游戏之所以正在被破坏，原因如下：</p>
+<ul>
+<li>该方法本质上已经将基准测试的性能提升过程标准化和工业化，不再需要太多新的想法。由于这种方法具有良好的扩展性和泛化性，你针对特定任务提出的新颖方法可能只能将性能提升5%，而下一个o系列模型在没有明确针对该任务的情况下就能将其提升30%。</li>
+<li>即使我们创建更难的基准测试，很快（而且越来越快）它们也会被这种方法解决。我的同事杰森·魏（Jason Wei）制作了一张精美的图表，很好地可视化了这一趋势：</li>
+</ul>
+<p>![[Pasted image 20250819190444.png]]</p>
+<blockquote>
+<p>Then what’s left to play in the second half? If novel methods are no longer needed and harder benchmarks will just get solved increasingly soon, what should we do?</p>
+</blockquote>
+<p>那么下半场还有什么可玩的呢？如果不再需要新颖的方法，更难的基准测试也会很快被解决，我们该怎么办？</p>
+<blockquote>
+<p>I think we should fundamentally re-think evaluation. It means not just to create new and harder benchmarks, but to fundamentally question existing evaluation setups and create new ones, so that we are forced to invent new methods beyond the working recipe. It is hard because humans have inertia and seldom question basic assumptions - you just take them for granted without realizing they are assumptions, not laws.</p>
+</blockquote>
+<p>我认为我们应该从根本上重新思考评估。这意味着不仅仅是创建新的、更难的基准测试，而是从根本上质疑现有的评估设置并创建新的评估设置，这样我们就不得不发明超越现有有效方法的新方法。这很难，因为人类有惯性，很少质疑基本假设——你只是想当然地接受它们，却没有意识到它们是假设，而不是定律。</p>
+<blockquote>
+<p>To explain inertia, suppose you invented one of the most successful evals in history based on human exams. It was an extremely bold idea in 2021, but 3 years later it’s saturated. What would you do? Most likely create a much harder exam. Or suppose you solved simply coding tasks. What would you do? Most likely find harder coding tasks to solve until you have reached IOI gold level.</p>
+</blockquote>
+<p>为了解释惯性，假设你发明了历史上最成功的基于人类考试的评估之一。在2021年，这是一个极其大胆的想法，但3年后它就饱和了。你会怎么做？最有可能的是创建一个更难的考试。或者假设你解决了简单的编码任务。你会怎么做？最有可能的是找到更难的编码任务去解决，直到达到IOI金牌水平。</p>
+<blockquote>
+<p>Inertia is natural, but here is the problem. AI has beat world champions at chess and Go, surpassed most humans on SAT and bar exams, and reached gold medal level on IOI and IMO. But the world hasn’t changed much, at least judged by economics and GDP.</p>
+</blockquote>
+<p>惯性是自然的，但问题就在这里。人工智能已经击败了国际象棋和围棋的世界冠军，在SAT和律师资格考试中超过了大多数人类，在IOI和IMO中达到了金牌水平。但世界并没有发生太大变化，至少从经济和GDP来看是这样。</p>
+<blockquote>
+<p>I call this the utility problem, and deem it the most important problem for AI.</p>
+<p>Perhaps we will solve the utility problem pretty soon, perhaps not. Either way, the root cause of this problem might be deceptively simple: our evaluation setups are different from real-world setups in many basic ways. To name two examples:</p>
+</blockquote>
+<p>我将此称为效用问题，并认为它是人工智能最重要的问题。</p>
+<p>也许我们很快就能解决效用问题，也许不能。无论如何，这个问题的根本原因可能简单得令人难以置信：我们的评估设置在许多基本方面与现实世界的设置不同。举两个例子：</p>
+<blockquote>
+<ul>
+<li>Evaluation “should” run automatically, so typically an agent receives a task input, do things autonomously, then receive a task reward. But in reality, an agent has to engage with a human throughout the task — you don’t just text customer service a super long message, wait for 10 minutes, then expect a detailed response to settle everything. By questioning this setup, new benchmarks are invented to either engage real humans (e.g. Chatbot Arena) or user simulation (e.g. tau-bench) in the loop.</li>
+</ul>
+</blockquote>
+<ul>
+<li>评估“应当”是自动化运行的，因此通常智能体接收任务输入后会自主行动，然后获得任务奖励。但实际上，智能体在整个任务过程中都必须与人类互动——你不会只给客服发一条超长消息，等10分钟就指望得到详细回复并解决所有问题。通过对这种设置提出质疑，新的基准测试被开发出来，将真实人类（例如Chatbot Arena）或用户模拟（例如tau-bench）纳入循环。</li>
+</ul>
+<blockquote>
+<ul>
+<li>Evaluation “should” run i.i.d. If you have a test set with 500 tasks, you run each task independently, average the task metrics, and get an overall metric. But in reality, you solve tasks sequentially rather than in parallel. A Google SWE solves google3 issues increasingly better as she gets more familiar with the repo, but a SWE agent solves many issues in the same repo without gaining such familiarity. We obviously need long-term memory methods (and there are), but academia does not have the proper benchmarks to justify the need, or even the proper courage to question i.i.d. assumption that has been the foundation of machine learning.</li>
+</ul>
+</blockquote>
+<ul>
+<li>评估“应当”满足独立同分布（i.i.d.）。如果你有一个包含500个任务的测试集，你会独立运行每个任务，取任务指标的平均值，从而得到整体指标。但现实中，你是按顺序而非并行地解决任务。一名谷歌软件工程师（SWE）会随着对代码库的熟悉程度提高，越来越出色地解决google3的问题，而一个软件工程师智能体在处理同一个代码库中的多个问题时却不会获得这种熟悉度。显然，我们需要长期记忆方法（而且确实存在一些），但学术界缺乏恰当的基准测试来证明这种需求的合理性，甚至缺乏质疑独立同分布这一机器学习基础假设的勇气。</li>
+</ul>
+<blockquote>
+<p>These assumptions have “always” been like this, and developing benchmarks in these assumptions were fine in the first half of AI, because when the intelligence is low, improving intelligence generally improves utility. But now, the general recipe is guaranteed to work under these assumptions. So the way to play the new game of the second half is</p>
+</blockquote>
+<p>这些假设“一直以来”都是如此，在人工智能的前半场，基于这些假设开发基准测试是可行的，因为当智能水平较低时，提高智能通常会提升效用。但现在，在这些假设下，通用方法已被证明是有效的。因此，人工智能下半场的新玩法是：</p>
+<blockquote>
+<p>We develop novel evaluation setups or tasks for real-world utility.<br>
+We solve them with the recipe or augment the recipe with novel components. Continue the loop.</p>
+</blockquote>
+<p>我们为现实世界的效用开发新颖的评估设置或任务。<br>
+我们使用通用方法来解决这些问题，或者用新颖的组件增强通用方法。如此循环往复。</p>
+<blockquote>
+<p>This game is hard because it is unfamiliar. But it is exciting. While players in the first half solve video games and exams, players in the second half get to build billion or trillion dollar companies by building useful products out of intelligence. While the first half is filled with incremental methods and models, the second half filters them to some degree. The general recipe would just crush your incremental methods, unless you create new assumptions that break the recipe. Then you get to do truly game-changing research.</p>
+</blockquote>
+<p>这个游戏之所以困难，是因为它陌生。但它也令人兴奋。如果说上半场的参与者在解决电子游戏和考试问题，那么下半场的参与者则通过将智能转化为有用的产品，打造价值数十亿甚至数万亿美元的公司。如果说上半场充斥着增量式的方法和模型，那么下半场在某种程度上会对它们进行筛选。通用方法会轻松碾压你的增量式方法，除非你创造新的假设来打破这种通用方法。那样，你就能开展真正具有颠覆性的研究。</p>
+<p>欢迎来到下半场！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「翻译」Waterfowl and ABCs]]></title>
+        <id>https://nekou2333.github.io/post/ZDB0yM7S4l/</id>
+        <link href="https://nekou2333.github.io/post/ZDB0yM7S4l/">
+        </link>
+        <updated>2025-03-23T12:40:45.000Z</updated>
+        <summary type="html"><![CDATA[<p>这是 Alex  Martelli 对 <code>goose typing</code> 的解释。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>这是 Alex  Martelli 对 <code>goose typing</code> 的解释。</p>
+<!-- more -->
+<blockquote>
+<p>I’ve been credited on Wikipedia for helping spread the helpful meme and sound-bite “duck typing” (i.e, ignoring an object’s actual type, focusing instead on ensuring that the object implements the method names, signatures, and semantics required for its intended use).<br>
+In Python, this mostly boils down to avoiding the use of isinstance to check the object’s type (not to mention the even worse approach of checking, for example, whether type(foo) is bar—which is rightly anathema as it inhibits even the simplest forms of inheritance!).<br>
+The overall duck typing approach remains quite useful in many contexts—and yet, in many others, an often preferable one has evolved over time. And herein lies a tale...</p>
+</blockquote>
+<p>我在Wikipedia上被认可，因为帮助传播了有用的梗和口号“鸭子类型”（即忽略对象的实际类型，而是专注于确保该对象实现了其预期使用所需的方法名称、签名和语义）。</p>
+<p>在Python中，这主要涉及避免使用isinstance来检查对象的类型（更不用说甚至更邪恶的做法是检查例如type(foo)是否为bar——这被正确地视为可耻的，因为它阻止了最简单形式的继承！）。</p>
+<p>整体上，鸭子类型方法在许多环境中仍然非常有用，而且随着时间的推移，在许多其他情况下已经出现了一个通常更可取的方法。这里就涉及到一个故事...</p>
+<blockquote>
+<p>In recent generations, the taxonomy of genus and species (including, but not limited to, the family of waterfowl known as Anatidae) has mostly been driven by pheneticsan approach focused on similarities of morphology and behavior...chiefly, observable traits. The analogy to “duck typing” was strong.<br>
+However, parallel evolution can often produce similar traits, both morphological and behavioral ones, among species that are actually unrelated, but just happened to evolve in similar, though separate, ecological niches. Similar “accidental similarities” happen in programming, too—for example, consider the classic object-oriented programming example:</p>
+</blockquote>
+<p>在近代史上，种属和物种的分类（包括但不限于以鸭形目Waterfowl的家族Anatidae）主要是由形态学和行为相似性导向的表观方法驱动...而这些主要关注可观察到的特征。与“鸭子类型”有很强的类比。</p>
+<p>然而，并行演化经常会在实际上没有关系的物种之间产生相似的形态学和行为特征，尽管它们发生在相似但独立的生态尼切中。编程中也会发生类似的“偶然相似”——例如，考虑经典的面向对象编程示例：</p>
+<pre><code class="language-python">class Artist:
+    def draw(self): ...
+
+class Gunslinger:
+    def draw(self): ...
+
+class Lottery:
+    def draw(self): ...
+</code></pre>
+<blockquote>
+<p>Clearly, the mere existence of a method named draw, callable without arguments, is far from sufficient to assure us that two objects x and y, such that x.draw() and y.draw() can be called, are in any way exchangeable or abstractly equivalent -- nothing about the similarity of the semantics resulting from such calls can be inferred. Rather, we need a knowledgeable programmer to somehow positively assert that such an equivalence holds at some level!</p>
+</blockquote>
+<p>显然，仅存在一个名为draw的没有参数的方法调用是远远不够保证我们两个对象x和y，使得可以调用x.draw()和y.draw()，它们在任何方式上都是可以交换或抽象等效--关于从这些调用产生的语义相似性不能推断出任何东西。我们需要一个有知识的程序员来以某种积极肯定的方式声明此类等价关系在某个层面上是成立的！</p>
+<blockquote>
+<p>In biology (and other disciplines), this issue has led to the emergence (and, on many facets, the dominance) of an approach that’s an alternative to phenetics, known as cladistics—focusing taxonomical choices on characteristics that are inherited from common ancestors, rather than ones that are independently evolved. (Cheap and rapid DNA sequencing can make cladistics highly practical in many more cases in recent years.)</p>
+</blockquote>
+<p>在生物学（和其他学科）中，这一问题引发了一个与表观法相悖但却占据主导地位的方法的出现，这种方法称为系统发育学或谱系发育学——它将分类选择集中在从共同祖先继承的特征上，而不是独立演化的特征。（低廉快速的DNA测序可以使得近年来在更多情况下让系统发育学变得非常实用。）</p>
+<blockquote>
+<p>For example, sheldgeese (once classified as being closer to other geese) and shelducks (once classified as being closer to other ducks) are now grouped together within the subfamily Tadornidae (implying they’re closer to each other than to any other Anatidae, as they share a closer common ancestor). Furthermore, DNA analysis has shown, in particular, that the white-winged wood duck is not as close to the Muscovy duck (the latter being a shelduck) as similarity in looks and behavior had long suggested—so the wood duck was reclassified into its own genus, and entirely out of the subfamily!</p>
+</blockquote>
+<p>例如，雁鸭属的水鸭蹼鸭（以前被归类为更接近其他雁）和豚鸭蹼鸭（以前被归类为更接近其他鸭子）现在都被归入同一个亚科Tadornidae之中（这意味着它们彼此相似超过任何其他的Anatidae，因为它们有共同的靠近的祖先）。进一步地，DNA分析显示，特别是白翅鸭和木鸭（后者是蹼鸭中的种类之一）并不像外观和行为长期暗示那样接近肯苏维鸭，因此木鸭被重新分类到了自己的属中，完全离开了亚科！</p>
+<blockquote>
+<p>Does this matter? It depends on the context! For such purposes as deciding how best to cook a waterfowl once you’ve bagged it, for example, specific observable traits (not all of them—plumage, for example, is de minimis in such a context), mostly texture and flavor (old-fashioned phenetics!), may be far more relevant than cladistics. But for other issues, such as susceptibility to different pathogens (whether you’re trying to raise waterfowl in captivity, or preserve them in the wild), DNA closeness can matter much more.</p>
+</blockquote>
+<p>这有影响吗？这取决于上下文！例如，对于已经射杀的水鸭来说，为了决定如何最好地烹饪它，特定可观察到的特征（不是全部，比如羽毛在这种情况下就无关紧要），主要是质地和味道（老式的表现法！），可能比系统发育学更相关。但对于其他问题，例如对不同病原体的抗性（无论你是想在野外保护还是在人工养殖下饲养水鸭），DNA接近程度可能就更重要了。</p>
+<blockquote>
+<p>So, by very loose analogy with these taxonomic revolutions in the world of waterfowls, I’m recommending supplementing (not entirely replacing—in certain contexts it shall still serve) good old duck typing with...goose typing!</p>
+</blockquote>
+<p>综上所述，根据水鸭类别的这些革命性变化，我建议在不完全替代（在某些情况下它仍会发挥作用）情况下，使用旧式鸭子类型结合...鹅子类型进行补充！</p>
+<blockquote>
+<p>What goose typing means is: isinstance(obj, cls) is now just fine...as long as cls is an abstract base class—in other words, cls’s metaclass is abc.ABCMeta.</p>
+</blockquote>
+<p>所谓的鹅子类型，指的是：只要cls是一个抽象基类——换句话说，cls的元类是abc.ABCMeta，即isinstance(obj, cl)就可以正常运行。</p>
+<blockquote>
+<p>You can find many useful existing abstract classes in collections.abc (and additional ones in the numbers module of The Python Standard Library).</p>
+</blockquote>
+<p>你可以在collections.abc模块中找到许多有用的现成抽象类（Python标准库的numbers模块中也有其他一些）。</p>
+<blockquote>
+<p>Among the many conceptual advantages of ABCs over concrete classes (e.g., Scott Meyer’s “all non-leaf classes should be abstract”; see Item 33 in his book, More Effective C++, Addison-Wesley), Python’s ABCs add one major practical advantage: the register class method, which lets end-user code “declare” that a certain class becomes a “virtual” subclass of an ABC (for this purpose, the registered class must meet the ABC’s method name and signature requirements, and more importantly, the underlying semantic contract—but it need not have been developed with any awareness of the ABC, and in particular need not inherit from it!). This goes a long way toward breaking the rigidity and strong coupling that make inheritance something to use with much more caution than typically practiced by most object-oriented programmers.</p>
+</blockquote>
+<p>在抽象类相比具体类方面，概念上有许多优势（例如Scott Meyer的“所有非叶子类都应该是抽象的”；请参见其书《More Effective C++》中的第33条）。Python的ABC提供了一个重要的实用优势：register方法，它让最终用户代码可以“声明”某个类成为ABC的“虚拟”子类（为此，注册的类必须满足ABC的方法名称和签名的要求，更重要的是底层的语义契约——但它不需要任何对ABC的意识或特别从中继承！）。这在很大程度上打破了继承带来的严格性和强耦合，使得继承成为一种必须谨慎使用而不是常规实践的面向对象编程者通常会使用的工具。</p>
+<blockquote>
+<p>Sometimes you don’t even need to register a class for an ABC to recognize it as a subclass!<br>
+That’s the case for the ABCs whose essence boils down to a few special methods. For example:</p>
+</blockquote>
+<pre><code class="language-python">&gt;&gt;&gt; class Struggle:
+
+... def __len__(self): return 23
+...
+&gt;&gt;&gt; from collections import abc
+&gt;&gt;&gt; isinstance(Struggle(), abc.Sized)
+True
+</code></pre>
+<blockquote>
+<p>As you see, abc.Sized recognizes Struggle as “a subclass,” with no need for registration, as implementing the special method named <strong>len</strong> is all it takes (it’s supposed to be implemented with the proper syntax—callable without arguments—and semantics—returning a nonnegative integer denoting an object’s “length”; any code that implements a specially named method, such as <strong>len</strong>, with arbitrary, noncompliant syntax and semantics has much worse problems anyway).</p>
+</blockquote>
+<p>显然，abc.Sized将Struggle识别为“子类”，而无需注册，只要实现名为__len__的特殊方法就足够了（应该按照正确的语法实现——不带参数可调用，按照正确的含义——返回一个非负整数表示对象的“长度”；任何使用伪造的、不符合规范的语法和含义实现特殊方法名称，比如__len__，都会有更大的问题）。</p>
+<blockquote>
+<p>So, here’s my valediction: whenever you’re implementing a class embodying any of the concepts represented in the ABCs in numbers, collections.abc, or other framework you may be using, be sure (if needed) to subclass it from, or register it into, the corresponding ABC. At the start of your programs using some library or framework defining classes which have omitted to do that, perform the registrations yourself; then, when you must check for (most typically) an argument being, e.g, “a sequence,” check whether:</p>
+</blockquote>
+<p>所以，这是我的告别词：当你在任何实现数字、collections.abc或其他框架中表示概念的类中加入代码时，确保（如果需要）从相应的ABC继承它，或将它注册进去。在使用一些未能这样做的库或框架定义类的程序开始时，自行执行注册；然后，当你必须检查（通常是）一个参数是否是，例如“一种序列”时，检查以下情况：</p>
+<pre><code class="language-python">isinstance(the_arg, collections.abc.Sequence)
+</code></pre>
+<blockquote>
+<p>不要在生产代码中定义自定义的 ABC（或元类）。如果你觉得有这样的冲动，我敢打赌可能是因为某人刚买了一把新锤子，他开始看待所有问题都像是钉子的症状——你（以及未来的代码维护者）会更快乐地坚持使用简单直接的代码，避免陷入这种深度迷茫。再见！</p>
+</blockquote>
+<p>不要在生产代码中定义自定义的 ABC（或元类）。如果你觉得有这样的冲动，我敢打赌可能是因为某人刚买了一把新锤子，他开始看待所有问题都像是钉子的症状——你（以及未来的代码维护者）会更快乐地坚持使用简单直接的代码，避免陷入这种深度迷茫。再见！</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[「茶与茶器」紫砂壶以砂为上]]></title>
+        <id>https://nekou2333.github.io/post/5Pkqm_Ws90/</id>
+        <link href="https://nekou2333.github.io/post/5Pkqm_Ws90/">
+        </link>
+        <updated>2025-03-15T05:24:02.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<p>盖是粗砂，正取砂无土气耳。 --明代 屠本畯《茗笈》</p>
+<p>茶壶以砂为上，盖既不夺香，又无熟汤气。 --文震亨</p>
+<p>宜倾竭即涤，去厥渟滓，乃俗夫强作解事，谓时壶质地紧洁，注茶越宿暑月不馊，不知越数刻而茶败矣，安俟越宿哉。 -- 明代 周高起《阳羡茗壶系》</p>
+</blockquote>
+<p>致密度高的紫砂壶，吸水率低，吸附性弱，所以紫砂壶不夺茶的香气。壶的透气性好，说明了紫砂壶的含砂量低、烧结温度低以及壶体的致密度低。壶体的结构疏松了，才会透气性好。若透气性好了，自然就会吸附、影响茶的香气，而<mark>不适合</mark>作为良好的泡茶器使用。</p>
+<p>假设一把壶只能泡一种茶，那只能证明这把紫砂壶的结构疏松，吸附了茶的香气，此种味道，会对连续瀹泡的第二种茶类产生干扰。低温烧结的壶，成品率高，但其质地疏松，可能会有害健康。另外，紫砂壶因含砂量低或未能烧透，茶渍又极易被吸附到壶体表面，使得此类壶会越养越黑，污渍斑斑，<s>最为贱相</s>。</p>
+<h2 id="选壶">选壶</h2>
+<h3 id="砂料纯正高温无害">砂料纯正，高温无害</h3>
+<p>壶的内外表面，通过适度烧结，不仅能够形成珠粒隐隐的自然丰富的肌理美感，而且一定要能看到云母的银晶闪烁，以及类似杂色斑点的黑色铁熔点。其色调沉稳、不花哨、不艳丽，壶面砂粒要莹润养眼，也就是我们常讲的紫砂壶的如玉水色。周高起推崇的“更自夺目”，指的就是砂粒烧结到位的晶莹感，这正是最容易忽略掉的鉴赏紫砂的要点。</p>
+<h3 id="出水顺畅">出水顺畅</h3>
+<h3 id="壶的大小要拿捏合手-同样容量的壶要选重量稍轻的">壶的大小，要拿捏合手。同样容量的壶，要选重量稍轻的</h3>
+<blockquote>
+<p>壶宜小不宜大，壶盖宜盎不宜砥，汤力茗香，俾得团结氤氲。 -- 吴骞 《阳羡名陶录》</p>
+<p>茶壶，窑器为上，又以小为贵。每一客一把，任其自斟自酌，方得其趣。 -- 冯可宾《岕茶笺》</p>
+</blockquote>
+<p>一人独品，选用容量100毫升左右的壶即可；二人对饮，选择容量150毫升左右的壶比较适当；若是三四人喝茶，壶的容量也不宜超过200毫升；茶三酒四，如果人数再多，就要分席而饮，方为恰当。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MoneyWiz 自动更新国内基金价格]]></title>
+        <id>https://nekou2333.github.io/post/9AUdqljtJh/</id>
+        <link href="https://nekou2333.github.io/post/9AUdqljtJh/">
+        </link>
+        <updated>2024-11-02T12:04:35.000Z</updated>
+        <content type="html"><![CDATA[<p>如题，MoneyWiz 虽然能够根据基金代码自动更新基金价格，但是使用的是 yahoo 的 api，不仅链接不稳定，对中国基金的支持也不够好。更糟糕的是，国内基金的代码可能和国外股票代码撞上，导致更新错误价格。</p>
+<h2 id="更新价格接口">更新价格接口</h2>
+<p>万幸，官方文档<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>中给出了更新价格的 scheme 规范，理论上只要在 safari 浏览器中输入类似于 <code>moneywiz://updateholding?symbol={FCODE}.CN&amp;price={dwjz}&amp;date={date}</code> 的链接即可更新价格。</p>
+<h2 id="获取价格自动化脚本">获取价格&amp;自动化脚本</h2>
+<p>网上基本都是在爬天天基金的数据，本项目自然不会例外，<a href="https://kouchao.github.io/TiantianFundApi/apis/#%E8%8E%B7%E5%8F%96%E5%9F%BA%E9%87%91%E5%8E%86%E5%8F%B2%E5%87%80%E5%80%BC">天天基金 Api</a> 给出了简便的接口，在本地部署这个项目即可，安装教程见<a href="https://kouchao.github.io/TiantianFundApi/guide/">快速开始</a>。</p>
+<p>为了方便起见，我是在mac上跑的脚本~~，如果没有mac，可以尝试下脚本+捷径的方案？我没试过~~</p>
+<p>为了防止和国外股票撞上，给基金代码后面加了 <code>.CN</code> 尾缀，这一点需要在 MoneyWiz 记录时注意补上，脚本比较简单，就直接给出来了。</p>
+<pre><code class="language-python">import webbrowser  
+import requests  
+import json
+import time
+
+pageIndex = 1  
+pagesize = 100  
+  
+tickers = [&quot;002963&quot;]  # 基金代码  
+for ticker in tickers:  
+    FCODE = ticker  
+    resp = requests.get(&quot;http://localhost:3000/fundMNHisNetList&quot;, params={  
+        &quot;FCODE&quot;: FCODE,  
+        &quot;pageIndex&quot;: pageIndex,  
+        &quot;pagesize&quot;: pagesize  
+    })  
+  
+    if resp.status_code &gt;= 400:  
+        continue  
+  
+    datas = json.loads(resp.content).get(&quot;Datas&quot;, [])  
+    for data in datas:  
+        dwjz = data.get(&quot;DWJZ&quot;, &quot;&quot;)  
+        if dwjz == &quot;&quot;:  
+            continue  
+        date = data.get(&quot;FSRQ&quot;, &quot;&quot;)  
+        if date == &quot;&quot;:  
+            continue  
+        date = date.replace(&quot;-&quot;, &quot;&quot;)  
+  
+        moneywiz = f&quot;moneywiz://updateholding?symbol={FCODE}.CN&amp;price={dwjz}&amp;date={date}&quot;  
+        webbrowser.open(moneywiz)  # 运行  
+        time.sleep(1)
+</code></pre>
+<p>在结尾，感谢 <strong><a href="https://github.com/log924/moneywiz-china-funds">moneywiz-china-funds</a></strong> 给到的思路。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>https://help.wiz.money/en/articles/4525440-automate-transaction-management-with-url-schemas <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[《kafka 权威指南》笔记]]></title>
+        <id>https://nekou2333.github.io/post/lesslesskafka-quan-wei-zhi-nan-greatergreater-bi-ji/</id>
+        <link href="https://nekou2333.github.io/post/lesslesskafka-quan-wei-zhi-nan-greatergreater-bi-ji/">
+        </link>
+        <updated>2024-08-11T14:35:59.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="1-初识kafka">1 初识Kafka</h2>
+<h3 id="12-kafka登场">1.2 Kafka登场</h3>
+<p>Kafka 的数据单元被称为消息。</p>
+<p>为了提高效率,消息被分批次写入 Kafka。批次就是一组消息,这些消息属于同一个主题和分区。</p>
+<p>消息以追加的方式写入分区,然后以先入先出的顺序读取。</p>
+<p>通常会使用流这个词来描述 Kafka 这类系统的数据。</p>
+<p>生产者创建消息。在其他发布与订阅系统中,生产者可能被称为发布者或写入者。</p>
+<p>消费者读取消息。在其他发布与订阅系统中,消费者可能被称为订阅者或读者。</p>
+<p>一个独立的 Kafka 服务器被称为 broker。broker 接收来自生产者的消息,为消息设置偏移量,并提交消息到磁盘保存。broker 为消费者提供服务,对读取分区的请求作出响应,返回已经提交到磁盘上的消息。</p>
+<p>broker 是集群的组成部分。每个集群都有一个 broker 同时充当了集群控制器的角色(自动  从集群的活跃成员中选举出来)。在集群中,一个分区从属于一个 broker,该 broker 被称为分区的首领。一个分区可以分配给多个 broker,这个时候会发生分区复制(见图 1-7)。这种复制机制为分区提供了消息冗余,如果有一个 broker 失效,其他 broker 可以接管领导权</p>
+<h2 id="5-深入-kafka">5 深入 Kafka</h2>
+<h3 id="52-控制器">5.2 控制器</h3>
+<p><mark>控制器其实就是一个 broker,只不过它除了具有一般 broker 的功能之外,还负责分区 首领的选举。</mark></p>
+<p>集群里第一个启动的 broker 通过在 Zookeeper 里创建一个临时节点 <code>/controller</code> 让自己成为控制器。其他 broker 在启动时也 会尝试创建这个节点,不过它们会收到一个“节点已存在”的异常,然后“意识”到控制 器节点已存在,也就是说集群里已经有一个控制器了。其他 broker 在控制器节点上创建 Zookeeper watch 对象,这样它们就可以收到这个节点的变更通知。</p>
+<h3 id="53-复制">5.3 复制</h3>
+<ul>
+<li>首领副本: 每个分区都有一个首领副本，为了保持一致性，所有生产者请求和消费者请求都会经过这个副本。</li>
+<li>跟随者副本: 唯一的任务就是从首领复制消息，保持和首领一致的状态。如果首领崩溃，其中一个被提升为新首领。</li>
+</ul>
+<h3 id="54-处理请求">5.4 处理请求</h3>
+<p>broker 会在它所监听的每一个端口上运行一个 Acceptor 线程,这个线程会创建一个连接,  并把它交给 Processor 线程去处理。Processor 线程(也被叫作“网络线程”)的数量是可  配置的。网络线程负责从客户端获取请求消息,把它们放进请求队列,然后从响应队列获  取响应消息,把它们发送给客户端。</p>
+<p>请求类型:</p>
+<ul>
+<li>生产请求：生产者发送的请求,它包含客户端要写入 broker 的消息。</li>
+<li>获取请求：在消费者和跟随者副本需要从 broker 读取消息时发送的请求。</li>
+<li>元数据请求：请求包含了客户端感兴趣的主题列表。</li>
+</ul>
+<figure data-type="image" tabindex="1"><img src="https://nekou2333.github.io/post-images/1723387003128.png" alt="" loading="lazy"></figure>
+<h3 id="55-物理存储">5.5 物理存储</h3>
+<p>Kafka 的基本存储单元是分区。</p>
+<p>文件管理：Kafka 管理员为每个主题配置了数据保留期限,规定  数据被删除之前可以保留多长时间,或者清理数据之前可以保留的数据量大小。</p>
+<p>文件格式：Kafka 的消息和偏移量保存在文件里。保存在磁盘上的数据格式与从生产者发送过来或者发送给消费者的消息格式是一样的，Kafka 可以使用零复制技术给消费者发送消息,同时避免了对生产者已经压缩过的消息进行解压和再压缩。Kafka 附带了一个叫 DumpLogSegment 的工具,可以用它查看片段的内容。</p>
+<p>索引：Kafka 的任意可用偏移量位置开始读取消息。为了帮助 broker 更快地定位到指定的偏移量,Kafka  为每个分区维护了一个索引。</p>
+<p>清理：早于保留时间的旧事件会被删除,  为每个键保留最新的值,从而达到清理的效果。彻底清除需要发送一个值为null的消息。</p>
+<h2 id="可靠的数据传递">可靠的数据传递</h2>
+<h3 id="61-可靠性保证">6.1 可靠性保证</h3>
+<p>指确保系统在各种不同的环境下能够  发生一致的行为。</p>
+<ul>
+<li>Kafka 可以保证分区消息的顺序。</li>
+<li>只有当消息被写入分区的所有同步副本时(但不一定要写入磁盘),它才被认为是“已  提交”的。</li>
+<li>只要还有一个副本是活跃的,那么已经提交的消息就不会丢失。</li>
+<li>消费者只能读取已经提交的消息。</li>
+</ul>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2023 · 辗转]]></title>
+        <id>https://nekou2333.github.io/post/2023-zhan-zhuan/</id>
+        <link href="https://nekou2333.github.io/post/2023-zhan-zhuan/">
+        </link>
+        <updated>2023-12-27T12:11:44.000Z</updated>
+        <content type="html"><![CDATA[<h2 id="这一年">这一年</h2>
+<p>23年的开年第一件大事就是解除疫情防控政策，对我来说算是件好事，不用担心啥时候再被封3个月，也不用隔三差五去做个核酸了，家里老人阳了也没啥症状。</p>
+<p>随后是平淡的工作生活，GPT4的出现给老板们打了针鸡血，纷纷开始卷起了LLM相关的一切。得益于此，我也冲了一波绩效，3到8月是各种探索，终归是把晋升的绩效攒够了。好坏事总是一起的，上海团队解散了，组员要么rebase到北京，要么换到新的组去。考虑到晋升，我选择了去北京，也就是题目中的「辗转」。答复是7月给的，10月再搬到北京。原先的计划还得继续，该拍的车牌还得拍，7月底终于拍到上海的车牌，买车却遥遥无期了，更遥遥无期的是本计划好的养老生活。</p>
+<p>ಥ_ಥ</p>
+<p>来到北京之后，租房给第一个教训，原先还不理解为啥北京同事那么多合租，原来是真贵啊。整体上北京的生活比上海更枯燥些，主要是小区附近没有餐馆，租的房子里也没有厨房，周末吃饭比在上海还要发愁，叠加上在北京没有同学，刚到北京就开始想着回去了。</p>
+<p>给这一年总结为辗转，有两层想法：</p>
+<p>一层是空间上，从上海搬到了北京；</p>
+<p>一层是心理上，在上海or北京间纠结，在卷和躺之间纠结。</p>
+<h2 id="里程碑">里程碑</h2>
+<p>10月晋升完，小赚一笔。</p>
+<h2 id="电子垃圾">电子垃圾</h2>
+<p>Mac Mini</p>
+<p>iPad mini</p>
+<p>Apple Watch Series 6</p>
+<h2 id="未来">未来</h2>
+<p>1～3月刷刷算法题，背背八股文，争取换个工作回南方，首选苏州微软，次选上海生服。</p>
+<p>回南方之后，买辆车，租个简单的一户室，认真过日子，现在的周末过的有些浑浑噩噩的。</p>
+<p>如果能找个相对清闲的工作，可以把古琴捡起来，平时练周末开车去师傅家学琴。</p>
+<p>在北京多找几个地方玩玩。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[租房复盘]]></title>
+        <id>https://nekou2333.github.io/post/zu-fang-fu-pan/</id>
+        <link href="https://nekou2333.github.io/post/zu-fang-fu-pan/">
+        </link>
+        <updated>2023-10-30T12:18:45.000Z</updated>
+        <content type="html"><![CDATA[<p>base北京已经整整两周，虽然有一周跑去了深圳，但是现在房子的优缺点已经差不多清楚了。</p>
+<p>对比 <a href="https://stdrc.cc/post/2023/04/04/renting-house/">租房经验总结 - Project RC</a> 中列出来的几个方面，做下复盘。</p>
+<h2 id="优点">优点</h2>
+<ul>
+<li>面积相对大，有阳台，有独卫，相对封闭；</li>
+<li>装修比较新；</li>
+</ul>
+<h2 id="缺点">缺点</h2>
+<ul>
+<li>房子在6楼，无电梯，相对来说上下楼拎重东西比较麻烦，水压小；</li>
+<li>小区安全过头了，外卖员无法直接送到门口，导致舍友点外卖会有点吵；</li>
+<li>附近没啥餐饮店，不点外卖的话吃饭麻烦；</li>
+<li>合租人多；</li>
+<li>插座少，有效插座就两个；</li>
+<li>没干湿分离；</li>
+<li>无厨房</li>
+<li>冰箱和床之间无隔音设施，小吵</li>
+<li>桌子小，缺少</li>
+</ul>
+<h2 id="复盘">复盘</h2>
+<ol>
+<li>合租的即使空间相对独立，心理层面上还是不能满足我对独立空间的需求，下次租房加价租一居室；</li>
+<li>接受小区相对不安全些，外卖能送到门口；</li>
+<li>外卖方便 or 离餐厅近，二选一；</li>
+<li>看房是记得看一下水压，卫生间是否有异味，水龙头水是否有锈味；</li>
+</ol>
+]]></content>
+    </entry>
+</feed>
